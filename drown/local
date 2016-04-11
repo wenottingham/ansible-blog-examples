@@ -1,2 +1,0 @@
-[all]
-tower-test.local ansible_ssh_user=root
