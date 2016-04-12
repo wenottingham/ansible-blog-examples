@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: true
+
+  pre_tasks:
+    - name: apply security updates
+      win_updates:
+        category_names: [u'SecurityUpdates',u'CriticalUpdates']
+        state: installed
+      register: updated 
+
+  roles:
+    - { role: trondhindenes.win_reboot, when: "updated.reboot_required" }
