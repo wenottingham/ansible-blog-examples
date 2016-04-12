@@ -7,3 +7,5 @@ drown/ - Playbooks from https://www.ansible.com/blog/drown-openssl-vulnerability
 
 control-remediation/ - Playbooks from https://www.ansible.com/control-with-ansible-tower-part-1
 
+badlock/ - Playbooks from https://www.ansible.com/blog/badlock-vulnerability
+
