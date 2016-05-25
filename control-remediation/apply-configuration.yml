@@ -64,7 +64,7 @@
         - httpd_execmem
         - selinuxuser_execstack
         - selinuxuser_execheap
-        - virt_execheap
+        - virt_execmem
       
     - name: Ensure proper services are running
       service:
