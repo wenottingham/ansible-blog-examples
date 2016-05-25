@@ -22,8 +22,8 @@
         user_data: |
                    #!/bin/bash
                    TOWER=webinar.demo.testing.ansible.com
-                   JOB=16
-                   KEY=ad7196b0a6d925711c10c42b5f938a2b
+                   JOB=20
+                   KEY=b1eec24ded2622a390cae4c732f86b4a
                    
                    retry_attempts=10
                    attempt=0
