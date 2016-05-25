@@ -8,6 +8,6 @@ ec2_instance_type: m3.medium
 ec2_keypair: notting-demo
 ec2_security_group: default
 ec2_instance_count: 1
-demo_tag_name: you-are-it
+demo_tag_name: test-is-it
 ec2_hosts: all
 wait_for_port: 22
