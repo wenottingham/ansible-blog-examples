@@ -21,15 +21,15 @@
         wait: true
         user_data: |
                    #!/bin/bash
-                   TOWER=tower-test.local
-                   JOB=457
-                   KEY=7acb361f01ca00414e8623433d49150b
+                   TOWER=webinar.demo.testing.ansible.com
+                   JOB=13
+                   KEY=20adb4b293ebee61607700956a97cf07
                    
                    retry_attempts=10
                    attempt=0
                    while [[ $attempt -lt $retry_attempts ]]
                    do
-                       status_code=`curl -s -i --data "host_config_key=${KEY}" http://${TOWER}/api/v1/job_templates/${JOB}/callback/ | head -n 1 | awk '{print $2}'`
+                       status_code=`curl -s -k -i --data "host_config_key=${KEY}" https://${TOWER}/api/v1/job_templates/${JOB}/callback/ | head -n 1 | awk '{print $2}'`
                        if [[ $status_code == 202 ]]
                            then
                            exit 0
